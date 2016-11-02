@@ -10,7 +10,7 @@
 
   <% @states.each do |state| %>
 
-  <option value="<%= state[:id]%>"> <%=state[:name] %> </option>
+  <option value= "<%= state[:id] %>" <% if state[:id]== "NY" %> selected ="selected" <%end%>> <%=state[:name]%> </option>
 
   <%end%>
 
